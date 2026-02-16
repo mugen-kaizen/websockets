@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon -w src/server --exec \"tsx --inspect\" src/server/main.ts",
-    "build": "tsc -b && vite build",
-    "start": "NODE_ENV=production tsx src/server/main.ts",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build",
+    "build:server": "tsc -p tsconfig.server.json",
+    "start": "NODE_ENV=production node dist-server/src/server/main.js",
     "lint": "eslint ."
   },
   "dependencies": {

@@ -10,7 +10,7 @@ const server = http.createServer(app);
 // Initialize sockets
 initSockets(server);
 
-app.get("/hello", (_, res) => {
+app.get("/hello", (_req, res) => {
   res.send("Hello Vite + React + TypeScript!");
 });
 
