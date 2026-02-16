@@ -3,23 +3,23 @@
         "target": "ESNext",
         "useDefineForClassFields": true,
         "lib": [
+            "ESNext",
             "DOM",
-            "DOM.Iterable",
-            "ESNext"
+            "DOM.Iterable"
         ],
-        "allowJs": false,
+        "module": "ESNext",
         "skipLibCheck": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true,
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
-        "composite": true,
-        "declaration": true,
-        "declarationMap": true
+        "paths": {
+            "@shared/*": [
+                "./src/shared/*"
+            ]
+        }
     }
 }

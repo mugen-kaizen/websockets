@@ -1,12 +1,10 @@
 {
-    "extends": "./tsconfig.json",
+    "extends": "./tsconfig.base.json",
     "compilerOptions": {
         "module": "CommonJS",
-        "outDir": "dist-server",
-        "noEmit": false,
         "moduleResolution": "node",
-        "allowImportingTsExtensions": false,
-        "esModuleInterop": true
+        "outDir": "dist-server",
+        "noEmit": false
     },
     "include": [
         "src/server/**/*",
